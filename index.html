@@ -1,38 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MMS2CJ5Z');</script>
-<!-- End Google Tag Manager -->
-
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MMS2CJ5Z');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영화감독 이아인</title>
-    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1a153a 0%, #0d0b18 100%);
+            color: #ffffff;
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 영화 스크린 같은 몽환적인 배경 효과 */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(57, 255, 20, 0.05) 0%, transparent 60%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* 메인 콘텐츠 영역 */
+        .inner {
+            text-align: center;
+            z-index: 2;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            letter-spacing: -0.5px;
+            word-break: keep-all;
+            color: #e2e8f0;
+        }
+
+        /* 강조하고 싶은 부분에 형광 초록 적용 */
+        h1 br + text, h1 {
+            text-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #39FF14; /* 형광 초록 */
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+        }
+
+        /* 하단 내비게이션 / 버튼 영역 */
+        .header-container {
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #openPopupBtn {
+            background: transparent;
+            color: #39FF14;
+            border: 2px solid #39FF14;
+            padding: 14px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+            letter-spacing: 1px;
+        }
+
+        /* 버튼 호버 효과 (마우스를 올렸을 때) */
+        #openPopupBtn:hover {
+            background: #39FF14;
+            color: #0d0b18;
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.6);
+            transform: translateY(-3px);
+        }
+
+        /* 버튼 클릭 효과 */
+        #openPopupBtn:active {
+            transform: translateY(-1px);
+        }
+
+        /* 반응형 모바일 스타일 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+                line-height: 1.5;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+            #openPopupBtn {
+                padding: 12px 28px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMS2CJ5Z"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMS2CJ5Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="inner">
-           <h1>"가장 깊은 감정을 끄집어내는, <br> 다채로운 인생만큼 다양한 색감을 다루는 <br>연출가."</h1>
-           <h3> 이아인 감독</h3>
+        <h1>"가장 깊은 감정을 끄집어내는, <br> 다채로운 인생만큼 다양한 색감을 다루는 <br>연출가."</h1>
+        <h3>이아인 감독</h3>
     </div>
-
-
 
     <div class="header-container">
-      <nav>
-         <button id="openPopupBtn" onclick="window.location.href='about.html'">이아인에 대해 알아가기</button>
-      </nav>
+        <nav>
+            <button id="openPopupBtn" onclick="window.location.href='about.html'">이아인에 대해 알아가기</button>
+        </nav>
     </div>
-
-
 </body>
 </html>
